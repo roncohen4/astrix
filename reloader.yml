@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://stakater.github.io/stakater-charts/'
+    repoURL: 'https://github.com/stakater/Reloader.git'
     targetRevision: HEAD
     path: reloader
     helm:
