@@ -11,7 +11,7 @@ spec:
       labels:
         app: astrix-app
       annotations:
-        configmap.reloader.stakater.com/reload: "astrix"
+        configmap.reloader.stakater.com/reload: "astrix-app"
     spec:
       containers:
       - name: astrix-app
