@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: reloader
+  namespace: default
+spec:
+  project: default
+  source:
+    repoURL: 'https://stakater.github.io/stakater-charts/'
+    targetRevision: HEAD
+    path: reloader
+    helm:
+      values: |
+        replicaCount: 1
+        image:
+          repository: stakater/reloader
+          tag: latest
+        service:
+          type: ClusterIP
+          port: 8080
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
