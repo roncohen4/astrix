@@ -5,3 +5,4 @@ metadata:
   namespace: default
 data:
   test: "value"
+  ron:  "yoooo!"
