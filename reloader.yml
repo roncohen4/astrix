@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/stakater/Reloader.git'
     targetRevision: HEAD
-    path: reloader
+    path: 'deployments/kubernetes/chart/reloader'
     helm:
       values: |
         replicaCount: 1
