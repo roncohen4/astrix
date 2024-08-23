@@ -3,7 +3,3 @@ kind: ConfigMap
 metadata:
   name: astrix-app
   data:
-    date: "2222-02-22"
-    ron: cohen
-    shut: up
-    yo: papaya
